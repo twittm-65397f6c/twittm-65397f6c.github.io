@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>动漫岛-动漫岛在线追番_动漫岛热门新番合集与观看指南</title>
+<meta name="description" content="动漫岛是一个专注动漫内容聚合与追番参考的专题页，提供新番、热门番、经典老番的类型解析、追番顺序、角色看点与更新动态。无论是想找当下热门动漫岛新番，还是想回顾口碑老番，都可以在这里按题材、口碑和更新节奏快速筛选，收藏后随时关注动漫岛相关内容动态。">
+<meta name="keywords" content="动漫岛,动漫岛在线追番,动漫岛新番,动漫岛热门动漫,动漫岛追番指南">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1c2b'/%3E%3Ccircle cx='24' cy='28' r='7' fill='%23ff7a59'/%3E%3Ccircle cx='42' cy='28' r='7' fill='%2358d6c6'/%3E%3Cpath d='M18 44c8 8 20 8 28 0' stroke='%23ffd166' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --bg:#0f1220;
+  --bg-soft:#171a2c;
+  --card:#1c2033;
+  --card-2:#22273d;
+  --line:rgba(255,255,255,.08);
+  --txt:#e8eaf3;
+  --txt-2:#a9b0c9;
+  --txt-3:#7c84a1;
+  --neon:#ff7a59;
+  --neon-2:#58d6c6;
+  --gold:#ffd166;
+  --violet:#9b8cff;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --maxw:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(900px 500px at 12% -8%, rgba(155,140,255,.18), transparent 60%),
+    radial-gradient(800px 460px at 92% 0%, rgba(255,122,89,.14), transparent 60%),
+    var(--bg);
+  color:var(--txt);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+.section{padding:44px 0}
+h1,h2,h3,h4{line-height:1.35;font-weight:800}
+h2.sec-title{
+  font-size:24px;
+  letter-spacing:.5px;
+  display:flex;align-items:center;gap:10px;
+}
+h2.sec-title::before{
+  content:"";width:6px;height:24px;border-radius:4px;
+  background:linear-gradient(180deg,var(--neon),var(--violet));
+}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.sec-sub{color:var(--txt-3);font-size:13px}
+.more-link{font-size:13px;color:var(--neon-2);border:1px solid rgba(88,214,198,.35);padding:5px 12px;border-radius:999px;transition:.2s}
+.more-link:hover{background:rgba(88,214,198,.12)}
+
+/* 顶部导航 */
+.topnav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(15,18,32,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:19px;letter-spacing:1px;white-space:nowrap}
+.logo .dot{width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--neon),var(--violet));display:flex;align-items:center;justify-content:center;font-size:15px;color:#0f1220}
+.logo em{font-style:normal;color:var(--neon-2)}
+.nav-links{display:flex;gap:4px;flex:1;overflow:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{font-size:14px;color:var(--txt-2);padding:7px 11px;border-radius:9px;white-space:nowrap;transition:.18s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.nav-search{display:flex;align-items:center;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 14px;min-width:200px}
+.nav-search input{background:none;border:0;outline:0;color:var(--txt);font-size:13px;width:100%}
+.nav-search input::placeholder{color:var(--txt-3)}
+.nav-search button{background:linear-gradient(135deg,var(--neon),var(--violet));border:0;color:#fff;font-size:12px;padding:6px 13px;border-radius:999px;cursor:pointer;white-space:nowrap}
+
+/* Banner */
+.banner{
+  position:relative;overflow:hidden;border-radius:24px;
+  margin-top:26px;
+  padding:52px 46px 46px;
+  background:
+    radial-gradient(700px 320px at 85% 10%, rgba(88,214,198,.22), transparent 65%),
+    radial-gradient(600px 300px at 5% 95%, rgba(255,122,89,.2), transparent 65%),
+    linear-gradient(140deg,#1b1f36,#14172a 55%,#1a1e33);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.banner::after{
+  content:"";position:absolute;right:-60px;top:-60px;width:300px;height:300px;
+  border-radius:50%;border:1px dashed rgba(155,140,255,.28);
+  animation:spin 26s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.banner-tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--neon-2);border:1px solid rgba(88,214,198,.35);padding:5px 13px;border-radius:999px;margin-bottom:16px;background:rgba(88,214,198,.07)}
+.banner h1{font-size:clamp(26px,4.4vw,42px);letter-spacing:1px;margin-bottom:16px;max-width:820px}
+.banner h1 span{background:linear-gradient(90deg,var(--neon),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.banner p{color:var(--txt-2);max-width:700px;margin-bottom:10px;font-size:15px}
+.banner-search{display:flex;gap:10px;margin:26px 0 22px;max-width:620px;flex-wrap:wrap}
+.banner-search .box{flex:1;min-width:220px;display:flex;align-items:center;background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:14px;padding:11px 16px}
+.banner-search .box input{flex:1;background:0;border:0;outline:0;color:#fff;font-size:14px}
+.banner-search .box input::placeholder{color:var(--txt-3)}
+.banner-search .go{background:linear-gradient(135deg,var(--neon),var(--violet));border:0;color:#fff;font-weight:700;padding:0 26px;border-radius:14px;cursor:pointer;font-size:14px;min-height:48px}
+.banner-btns{display:flex;flex-wrap:wrap;gap:9px}
+.banner-btns a{font-size:13px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--txt-2);transition:.2s}
+.banner-btns a:hover{color:#fff;border-color:rgba(255,122,89,.5);background:rgba(255,122,89,.14);transform:translateY(-2px)}
+
+/* 快捷分类条 */
+.quickcat{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:22px}
+.quickcat a{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 12px;text-align:center;transition:.2s}
+.quickcat a b{display:block;font-size:15px;margin-bottom:3px}
+.quickcat a small{color:var(--txt-3);font-size:11px}
+.quickcat a:hover{transform:translateY(-3px);border-color:rgba(155,140,255,.45);box-shadow:0 10px 24px rgba(0,0,0,.3)}
+
+/* 内容简介 */
+.intro-box{background:linear-gradient(135deg,var(--card),var(--bg-soft));border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px}
+.intro-box p{color:var(--txt-2);margin-bottom:14px}
+.intro-box p:last-child{margin-bottom:0}
+.intro-box strong{color:var(--txt)}
+
+/* 热门推荐卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.acard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.acard:hover{transform:translateY(-5px);border-color:rgba(255,122,89,.4);box-shadow:0 16px 34px rgba(0,0,0,.4)}
+.acard .cover{height:112px;position:relative;display:flex;align-items:flex-end;padding:12px 14px}
+.acard .cover::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 12px)}
+.acard .cover .badge{position:relative;font-size:11px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.22);padding:3px 9px;border-radius:999px;backdrop-filter:blur(4px)}
+.acard .body{padding:15px 16px 18px;flex:1;display:flex;flex-direction:column}
+.acard h3{font-size:16px;margin-bottom:8px}
+.acard .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.acard .tags span{font-size:11px;color:var(--neon-2);background:rgba(88,214,198,.1);border:1px solid rgba(88,214,198,.24);padding:2px 8px;border-radius:6px}
+.acard .desc{font-size:13px;color:var(--txt-2);flex:1}
+.acard .meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:11.5px;color:var(--txt-3);border-top:1px dashed var(--line);padding-top:10px}
+.acard .meta .score{color:var(--gold);font-weight:700}
+
+/* 更新列表 */
+.upd-list{display:grid;gap:10px}
+.upd-item{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;transition:.2s}
+.upd-item:hover{background:var(--card-2);transform:translateX(3px)}
+.upd-item .t{font-size:12px;color:var(--neon-2);min-width:64px;padding-top:2px;font-weight:700}
+.upd-item .c{flex:1}
+.upd-item .c b{font-size:14.5px;display:block;margin-bottom:2px}
+.upd-item .c span{font-size:12.5px;color:var(--txt-3)}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.cat-grid a{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 16px;transition:.22s;position:relative;overflow:hidden}
+.cat-grid a:hover{border-color:rgba(88,214,198,.5);transform:translateY(-3px)}
+.cat-grid a b{display:block;font-size:16px;margin-bottom:6px}
+.cat-grid a small{font-size:12px;color:var(--txt-3);display:block;line-height:1.6}
+.cat-grid a::after{content:"";position:absolute;right:-16px;bottom:-16px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,rgba(155,140,255,.22),transparent)}
+
+/* 深度解析正文 */
+.article-body{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 36px}
+.article-body h3{font-size:18px;margin:26px 0 12px;color:#fff}
+.article-body h3:first-child{margin-top:0}
+.article-body p{color:var(--txt-2);margin-bottom:14px;font-size:14.5px}
+.article-body strong{color:var(--gold)}
+.article-body .hl{color:var(--neon-2);font-weight:700}
+
+/* 体验指南 */
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.guide-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:.2s}
+.guide-card:hover{border-color:rgba(155,140,255,.4)}
+.guide-card .ico{font-size:22px;margin-bottom:8px}
+.guide-card h4{font-size:15px;margin-bottom:8px}
+.guide-card p{font-size:13px;color:var(--txt-3)}
+
+/* FAQ 双栏问答 */
+.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:.2s}
+.faq-item:hover{border-color:rgba(88,214,198,.35);background:var(--card-2)}
+.faq-item h4{font-size:15px;margin-bottom:9px;color:#fff;display:flex;gap:8px;align-items:flex-start}
+.faq-item h4::before{content:"Q";color:var(--neon);font-weight:900;font-size:13px;background:rgba(255,122,89,.15);width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.faq-item p{font-size:13.5px;color:var(--txt-2)}
+
+/* 用户评论 */
+.cmt-list{display:grid;gap:12px}
+.cmt{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 18px}
+.cmt .av{width:38px;height:38px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#0f1220}
+.cmt .main{flex:1}
+.cmt .who{display:flex;justify-content:space-between;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+.cmt .who b{font-size:13.5px}
+.cmt .who span{font-size:11px;color:var(--txt-3)}
+.cmt p{font-size:13.5px;color:var(--txt-2)}
+.cmt .like{margin-top:6px;font-size:11.5px;color:var(--txt-3)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.news-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:.2s}
+.news-card:hover{transform:translateY(-3px);border-color:rgba(255,209,102,.4)}
+.news-card .date{font-size:11.5px;color:var(--gold);margin-bottom:8px;font-weight:700}
+.news-card h4{font-size:15px;margin-bottom:8px}
+.news-card p{font-size:13px;color:var(--txt-3)}
+
+/* 订阅引导 */
+.subscribe{background:linear-gradient(135deg,rgba(255,122,89,.16),rgba(155,140,255,.16));border:1px solid var(--line);border-radius:20px;padding:36px;text-align:center}
+.subscribe h2{font-size:22px;margin-bottom:10px}
+.subscribe p{color:var(--txt-2);margin-bottom:20px;font-size:14px}
+.sub-form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.sub-form input{flex:1;min-width:200px;background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:#fff;outline:0;font-size:14px}
+.sub-form button{background:linear-gradient(135deg,var(--neon),var(--violet));border:0;color:#fff;padding:12px 28px;border-radius:12px;font-weight:700;cursor:pointer;font-size:14px}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);margin-top:30px;padding:40px 0 30px;background:rgba(0,0,0,.2)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px}
+.foot-grid h5{font-size:14px;margin-bottom:12px;color:#fff}
+.foot-grid a{display:block;font-size:13px;color:var(--txt-3);padding:3px 0;transition:.15s}
+.foot-grid a:hover{color:var(--neon-2)}
+.foot-desc{font-size:13px;color:var(--txt-3);line-height:1.8}
+.foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:12px;color:var(--txt-3);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .nav-inner{height:auto;padding:10px 0;flex-wrap:wrap;gap:10px}
+  .nav-links{order:3;width:100%;flex:none}
+  .nav-search{min-width:0;flex:1}
+  .banner{padding:34px 22px 30px;border-radius:18px}
+  .article-body{padding:24px 20px}
+  .intro-box{padding:24px 20px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){
+  .section{padding:32px 0}
+  h2.sec-title{font-size:20px}
+  .foot-grid{grid-template-columns:1fr}
+  .banner-btns a{font-size:12px;padding:7px 12px}
+}
+</style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header class="topnav" id="site-nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="/#site-nav">
+      <span class="dot">島</span>
+      <span>动漫<em>岛</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/#hot-picks">热门推荐</a>
+      <a href="/#latest-updates">最新更新</a>
+      <a href="/#genre-cats">题材分类</a>
+      <a href="/#deep-analysis">深度解析</a>
+      <a href="/#watch-guide">追番指南</a>
+      <a href="/#faq-zone">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news-feed">动漫资讯</a>
+    </nav>
+    <form class="nav-search" onsubmit="return false;">
+      <input type="search" placeholder="搜索番剧、角色、题材…" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 首屏 Banner -->
+  <section class="banner" id="home-banner">
+    <span class="banner-tag">✦ 新番 · 老番 · 追番参考聚合</span>
+    <h1>动漫岛：<span>热门新番与经典老番的追番参考专题</span></h1>
+    <p>这里有按题材、口碑与更新节奏整理的动漫岛内容集合，帮你更快找到想看的那一部。</p>
+    <p>从热血少年到治愈日常，从剧场版到短篇番，用清晰的分类和编辑解读把选择变简单。</p>
+    <div class="banner-search">
+      <div class="box">
+        <input type="search" placeholder="输入番名 / 题材 / 角色名，快速定位内容" aria-label="首屏搜索">
+      </div>
+      <button class="go" type="button">立即查找</button>
+    </div>
+    <div class="banner-btns">
+      <a href="/#hot-picks">热门番单</a>
+      <a href="/#latest-updates">今日更新</a>
+      <a href="/#genre-cats">题材分类</a>
+      <a href="/#deep-analysis">编辑解析</a>
+      <a href="/#watch-guide">追番顺序</a>
+      <a href="/#comments">观众讨论</a>
+      <a href="/#news-feed">动漫资讯</a>
+      <a href="/#faq-zone">新人答疑</a>
+    </div>
+  </section>
+
+  <!-- 快捷分类入口 -->
+  <section class="section" id="quick-entry" style="padding-top:26px;padding-bottom:10px;">
+    <div class="quickcat">
+      <a href="/#genre-cats"><b>热血战斗</b><small>燃向番单</small></a>
+      <a href="/#genre-cats"><b>日常治愈</b><small>轻松观看</small></a>
+      <a href="/#genre-cats"><b>悬疑推理</b><small>烧脑推荐</small></a>
+      <a href="/#genre-cats"><b>奇幻冒险</b><small>世界观向</small></a>
+      <a href="/#genre-cats"><b>恋爱青春</b><small>情感向</small></a>
+      <a href="/#genre-cats"><b>科幻机战</b><small>设定党</small></a>
+      <a href="/#genre-cats"><b>剧场版</b><small>单片精选</small></a>
+      <a href="/#genre-cats"><b>泡面番</b><small>碎片时间</small></a>
+    </div>
+  </section>
+
+  <!-- 内容简介 -->
+  <section class="section" id="intro">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛内容简介与使用说明</h2>
+      <span class="sec-sub">帮助第一次来的观众快速上手</span>
+    </div>
+    <div class="intro-box">
+      <p>很多人搜<strong>动漫岛</strong>，其实是想解决一个很具体的问题：最近有什么值得看的番、哪些是口碑稳的老番、追更节奏该怎么安排。这个页面围绕这些真实需求，把动漫岛相关内容按题材、热度、更新状态和观看体验做了系统化整理，让"随便点开一部"变成"有目的地选一部"。</p>
+      <p>页面的受众覆盖比较广：刚入坑不久、需要一份清晰入门顺序的新观众；追番多年、想找同类型冷门佳作的资深观众；还有偏好剧场版、短篇番、泡面番的碎片化观看人群。不同人群都能在<strong>动漫岛</strong>专题里找到对应的入口，不用在大量列表中反复翻找。</p>
+      <p>我们提供的参考价值主要体现在三块：一是热门推荐卡片，用简短看点说明"这部为什么值得点开"；二是深度解析正文，讲清楚题材特点、角色塑造和节奏体验；三是体验指南与 FAQ，回答追番顺序、更新关注、适合人群这类高频疑问。整体信息偏编辑视角，不做夸张吹捧，尽量让每一条推荐都有可判断的依据。</p>
+      <p>值得收藏的原因也很直接：番剧是持续更新的内容形态，新番每周推进、老番随时补完，专题页会随着更新节奏调整推荐顺序和更新动态。把<strong>动漫岛</strong>放进收藏夹，下次想找番时不用重新搜索，直接从分类或热门榜进入即可，浏览路径更短。</p>
+    </div>
+  </section>
+
+  <!-- 热门推荐 -->
+  <section class="section" id="hot-picks">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛热门推荐：近期值得点开的番单</h2>
+      <a class="more-link" href="/#latest-updates">查看更多更新</a>
+    </div>
+    <div class="card-grid">
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#3a2a5e,#7a4bff)">
+          <span class="badge">热血 · 连载中</span>
+        </div>
+        <div class="body">
+          <h3>《赤刃行记》</h3>
+          <div class="tags"><span>少年漫改</span><span>战斗作画</span><span>成长线</span></div>
+          <p class="desc">主角从边缘小队一路打上主线战场，打斗分镜节奏紧凑，适合喜欢高密度战斗场面的观众。</p>
+          <div class="meta"><span class="score">★ 8.9</span><span>更新至 12 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#1f4a44,#58d6c6)">
+          <span class="badge">治愈 · 已完结</span>
+        </div>
+        <div class="body">
+          <h3>《海边的面包店》</h3>
+          <div class="tags"><span>日常治愈</span><span>美食元素</span><span>慢节奏</span></div>
+          <p class="desc">小镇面包店与常客之间的短篇故事集，情绪舒缓，适合睡前或通勤时一集一集慢慢看。</p>
+          <div class="meta"><span class="score">★ 9.1</span><span>全 12 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#4a2b2b,#ff7a59)">
+          <span class="badge">悬疑 · 连载中</span>
+        </div>
+        <div class="body">
+          <h3>《雾港档案》</h3>
+          <div class="tags"><span>推理</span><span>群像</span><span>反转</span></div>
+          <p class="desc">以港口城市连环失踪案为引，每三集回收一次线索，适合喜欢边看边推理的观众。</p>
+          <div class="meta"><span class="score">★ 8.7</span><span>更新至 9 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#2b3a5e,#9b8cff)">
+          <span class="badge">奇幻 · 连载中</span>
+        </div>
+        <div class="body">
+          <h3>《星轨旅人》</h3>
+          <div class="tags"><span>架空世界</span><span>冒险</span><span>美术向</span></div>
+          <p class="desc">世界观设定扎实，场景美术是最大看点，前两集铺垫略慢，第三集开始进入正题。</p>
+          <div class="meta"><span class="score">★ 8.6</span><span>更新至 7 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#5e3a2a,#ffd166)">
+          <span class="badge">恋爱 · 已完结</span>
+        </div>
+        <div class="body">
+          <h3>《午后三点的信》</h3>
+          <div class="tags"><span>青春</span><span>校园</span><span>细腻演出</span></div>
+          <p class="desc">书信串联的双线叙事，情感表达克制，适合喜欢慢热型青春故事的观众。</p>
+          <div class="meta"><span class="score">★ 8.8</span><span>全 13 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#233b52,#58d6c6)">
+          <span class="badge">科幻 · 连载中</span>
+        </div>
+        <div class="body">
+          <h3>《零号机库》</h3>
+          <div class="tags"><span>机战</span><span>硬设定</span><span>群像</span></div>
+          <p class="desc">机设和战术描写偏硬核，战斗调度讲究，适合设定党和机战老观众。</p>
+          <div class="meta"><span class="score">★ 8.5</span><span>更新至 10 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#3a2a4a,#c77dff)">
+          <span class="badge">泡面番 · 已完结</span>
+        </div>
+        <div class="body">
+          <h3>《三分钟妖怪图鉴》</h3>
+          <div class="tags"><span>短篇</span><span>妖怪题材</span><span>轻喜剧</span></div>
+          <p class="desc">每集三分钟的妖怪小剧场，笑点密集，通勤路上刷完一整季毫无压力。</p>
+          <div class="meta"><span class="score">★ 8.3</span><span>全 24 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#2a3a2a,#8bd17c)">
+          <span class="badge">剧场版 · 单片</span>
+        </div>
+        <div class="body">
+          <h3>《夏末回声》剧场版</h3>
+          <div class="tags"><span>剧场版</span><span>音乐</span><span>单集完整</span></div>
+          <p class="desc">以校园合唱团为题材的独立剧场版，音乐段落完成度高，适合一次看完。</p>
+          <div class="meta"><span class="score">★ 9.0</span><span>时长 108 分钟</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#4a3a1f,#ffd166)">
+          <span class="badge">运动 · 连载中</span>
+        </div>
+        <div class="body">
+          <h3>《逆风接力》</h3>
+          <div class="tags"><span>运动番</span><span>团队协作</span><span>热血</span></div>
+          <p class="desc">田径接力队题材，比赛段的镜头节奏很抓人，情绪推进比想象中扎实。</p>
+          <div class="meta"><span class="score">★ 8.6</span><span>更新至 8 话</span></div>
+        </div>
+      </article>
+
+      <article class="acard">
+        <div class="cover" style="background:linear-gradient(135deg,#33264a,#9b8cff)">
+          <span class="badge">悬疑 · 已完结</span>
+        </div>
+        <div class="body">
+          <h3>《第十三号住户》</h3>
+          <div class="tags"><span>密室</span><span>心理向</span><span>短篇</span></div>
+          <p class="desc">单栋公寓内的封闭式悬疑，篇幅短、信息密度高，适合周末一次补完。</p>
+          <div class="meta"><span class="score">★ 8.4</span><span>全 10 话</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="section" id="latest-updates">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛最新更新与播出动态</h2>
+      <span class="sec-sub">数据截至 2026 年 11 月 7 日</span>
+    </div>
+    <div class="upd-list">
+      <div class="upd-item"><span class="t">11-07</span><div class="c"><b>《赤刃行记》</b><span>第 12 话已上线，本集进入小队合战段，战斗作画集中在后半段。</span></div></div>
+      <div class="upd-item"><span class="t">11-07</span><div class="c"><b>《雾港档案》</b><span>第 9 话更新，前两集铺设的线索在本集首次回收，建议连看。</span></div></div>
+      <div class="upd-item"><span class="t">11-06</span><div class="c"><b>《星轨旅人》</b><span>第 7 话上线，主线正式展开，新增两名关键配角。</span></div></div>
+      <div class="upd-item"><span class="t">11-06</span><div class="c"><b>《零号机库》</b><span>第 10 话更新，本集为战术部署回，机战段落较少但信息量大。</span></div></div>
+      <div class="upd-item"><span class="t">11-05</span><div class="c"><b>《逆风接力》</b><span>第 8 话上线，接力赛预赛段开始，节奏明显加快。</span></div></div>
+      <div class="upd-item"><span class="t">11-04</span><div class="c"><b>《海边的面包店》</b><span>全 12 话完结，最终话为独立短篇，适合作为整季收尾。</span></div></div>
+      <div class="upd-item"><span class="t">11-03</span><div class="c"><b>《午后三点的信》</b><span>全 13 话完结，双线叙事在最终话合流，评价整体走高。</span></div></div>
+      <div class="upd-item"><span class="t">11-02</span><div class="c"><b>《第十三号住户》</b><span>全 10 话完结，结局讨论度较高，建议补完后看评论区。</span></div></div>
+      <div class="upd-item"><span class="t">11-01</span><div class="c"><b>《三分钟妖怪图鉴》</b><span>第二季全 24 话上线，单集时长仍保持三分钟以内。</span></div></div>
+      <div class="upd-item"><span class="t">10-30</span><div class="c"><b>《夏末回声》剧场版</b><span>上线完整版，音乐段落新增一段未公开的合唱编排。</span></div></div>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="section" id="genre-cats">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛题材分类入口</h2>
+      <span class="sec-sub">按观看偏好快速筛选</span>
+    </div>
+    <div class="cat-grid">
+      <a href="/#hot-picks"><b>热血战斗</b><small>高密度打斗与成长主线，适合追求燃点的观众。</small></a>
+      <a href="/#hot-picks"><b>日常治愈</b><small>节奏舒缓、情绪温和，适合放松与睡前观看。</small></a>
+      <a href="/#hot-picks"><b>悬疑推理</b><small>线索铺设与反转设计，适合边看边推的观众。</small></a>
+      <a href="/#hot-picks"><b>奇幻冒险</b><small>架空世界观与旅途叙事，设定党优先。</small></a>
+      <a href="/#hot-picks"><b>恋爱青春</b><small>校园与情感线为主，偏细腻演出与人物关系。</small></a>
+      <a href="/#hot-picks"><b>科幻机战</b><small>硬设定与战斗调度并重，适合老观众。</small></a>
+      <a href="/#hot-picks"><b>剧场版单片</b><small>一次看完的完整故事，不需要追更。</small></a>
+      <a href="/#hot-picks"><b>泡面番短篇</b><small>单集三到五分钟，碎片时间友好。</small></a>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="section" id="deep-analysis">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛深度解析：为什么这些番值得追</h2>
+      <span class="sec-sub">编辑视角的题材与体验拆解</span>
+    </div>
+    <div class="article-body">
+      <h3>一、题材分布：动漫岛内容为什么看起来"杂"其实有规律</h3>
+      <p>第一次接触<strong>动漫岛</strong>相关内容的观众，常会觉得番单跨度太大：上一部还是高密度战斗，下一部就切到小镇面包店。这其实不是随意堆砌，而是按"观看场景"来组织的。热血战斗和科幻机战对应的是需要专注、追求情绪爆发的时段；日常治愈和恋爱青春对应通勤、睡前这类低注意力场景；悬疑推理和奇幻冒险则介于两者之间，需要一定投入但不至于太累。<span class="hl">理解这个分层，追番选择会清晰很多。</span></p>
+      <p>以《赤刃行记》和《海边的面包店》为例，前者每集都要求观众跟上战斗节奏和人物关系变化，适合整块时间观看；后者单集独立、情绪平缓，随时暂停也不影响理解。把这两类内容混在一起按"热度"排序，反而会让人误判自己的观看体验。</p>
+
+      <h3>二、内容吸引点：不是所有番都靠"剧情炸裂"</h3>
+      <p>很多推荐文案喜欢用"神作""封神"这类词，但实际观看体验差异很大。《星轨旅人》的吸引力主要在场景美术和世界观搭建，前两集叙事节奏偏慢，如果只按剧情推进速度判断，很容易在前十分钟就放弃；而《雾港档案》恰恰相反，它靠每三集一次的线索回收维持张力，美术相对朴素，但信息密度高。</p>
+      <p>所以判断一部番是否适合自己，<strong>先看它靠什么留住观众</strong>：是作画、是设定、是人物关系，还是叙事结构。动漫岛专题里的看点描述尽量把这一点写清楚，而不是笼统地给一个高分。</p>
+
+      <h3>三、角色与群像：近年番剧的明显趋势</h3>
+      <p>从这批推荐里能看出一个趋势：纯单主角叙事的比例在下降，群像和双线结构变多。《零号机库》用小队编制把机师、整备、指挥三条线并行推进；《逆风接力》把接力队的每一棒都当作独立人物弧来写；《午后三点的信》则用书信把两个时间线的主角连接起来。这种结构的好处是信息层次更丰富，代价是前几集需要更多耐心去认人。</p>
+      <p>对观众来说，判断标准可以简单一点：<strong>如果你喜欢跟着一个主角走完整条成长线，单主角番更合适；如果你享受人物之间的互相映照，群像番的回报更高。</strong>动漫岛的分类入口里也按这个逻辑做了区隔。</p>
+
+      <h3>四、节奏与观看体验：追更和补番是两种节奏</h3>
+      <p>同一部番，追更和补番的体验可能完全不同。悬疑类作品在追更状态下，每周一集容易遗忘细节，《雾港档案》这种三集一回收的结构就是为追更设计的；而《第十三号住户》全 10 话的短篇结构，更适合周末一次补完，中间断开会削弱密室压迫感。</p>
+      <p>热血和运动番则相反，追更时每周一集的情绪积累本身就是体验的一部分，《逆风接力》的预赛段按周推进，观众的期待感会被拉长。动漫岛在更新动态里标注了集数和段落位置，就是为了让观众判断"现在入场是否合适"。</p>
+
+      <h3>五、适合人群与同类比较</h3>
+      <p>整体来看，动漫岛专题覆盖的人群偏"有明确观看偏好"的观众：想找同类型替代品的、想按节奏安排观看计划的、想避开踩雷的。如果你刚入坑，建议从日常治愈或泡面番开始，门槛低、容错率高；如果你已经追番多年，科幻机战和悬疑推理的设定密度更能提供讨论空间。</p>
+      <p>同类比较上，热血战斗番之间主要差在作画稳定性和战斗调度，科幻机战差在设定自洽度，治愈番差在情绪是否真诚。这些维度比单纯的评分更能反映实际体验，也是这个页面反复强调"看点在哪儿"的原因。</p>
+
+      <h3>六、搜"动漫岛"的人通常在找什么</h3>
+      <p>从搜索意图看，大部分人是想快速定位内容：最近更新了什么、哪部口碑稳、追番顺序怎么排、有没有同类型推荐。少部分人是想确认某部番是否值得投入时间。这个页面把这几类需求拆成热门推荐、更新动态、题材分类、深度解析和 FAQ 五个入口，目的就是减少来回跳转。动漫岛相关内容会持续随更新节奏调整，收藏后回访比每次重新搜索更省时间。</p>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="section" id="watch-guide">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛追番体验指南</h2>
+      <span class="sec-sub">怎么用这个页面更顺手</span>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <div class="ico">🗂</div>
+        <h4>按场景选番</h4>
+        <p>先确定是整块时间还是碎片时间，再从热血/治愈两类里挑，比按热度盲选更省事。</p>
+      </div>
+      <div class="guide-card">
+        <div class="ico">📅</div>
+        <h4>追更看更新动态</h4>
+        <p>更新列表标注了集数和段落位置，能判断现在入场会不会接不上剧情。</p>
+      </div>
+      <div class="guide-card">
+        <div class="ico">🔍</div>
+        <h4>分类筛选更直接</h4>
+        <p>题材入口按观看偏好分组，不用在长列表里反复滑动。</p>
+      </div>
+      <div class="guide-card">
+        <div class="ico">📱</div>
+        <h4>移动端阅读友好</h4>
+        <p>卡片和列表在手机上自动单列排布，通勤时浏览不费眼。</p>
+      </div>
+      <div class="guide-card">
+        <div class="ico">⭐</div>
+        <h4>收藏后回访</h4>
+        <p>番剧持续更新，收藏页面比每次重新搜索更快找到最新动态。</p>
+      </div>
+      <div class="guide-card">
+        <div class="ico">🧭</div>
+        <h4>推荐扩展路径</h4>
+        <p>从一部番的看点描述可以顺藤摸瓜找到同类型，浏览路径自然延伸。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq-zone">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛常见问题解答</h2>
+      <span class="sec-sub">新人最常问的 6 个问题</span>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>动漫岛专题里的番单是按什么标准排的？</h4>
+        <p>主要综合口碑稳定性、更新状态和观看场景适配度，不单纯看热度。连载中的番会优先展示更新动态，完结番按题材归类，方便按"现在能不能看完整季"来筛选。</p>
+      </div>
+      <div class="faq-item">
+        <h4>刚入坑，应该从哪一类开始看？</h4>
+        <p>建议从日常治愈或泡面番入手，单集独立、门槛低，不容易因为跟不上设定而弃番。适应节奏后再转向热血战斗和悬疑推理，观看体验会更顺。</p>
+      </div>
+      <div class="faq-item">
+        <h4>连载中的番和完结番，追更体验差别大吗？</h4>
+        <p>差别不小。悬疑类追更容易遗忘细节，适合三集一回收结构的作品；热血和运动番追更时的情绪积累反而是体验的一部分。完结番更适合一次补完。</p>
+      </div>
+      <div class="faq-item">
+        <h4>深度解析里提到的"看点在哪儿"有什么用？</h4>
+        <p>它帮你判断一部番靠什么留住观众：是作画、设定、人物关系还是叙事结构。知道这一点，比只看评分更能避免"高分但看不下去"的情况。</p>
+      </div>
+      <div class="faq-item">
+        <h4>怎么找到和某部番类似的作品？</h4>
+        <p>先看那部番的题材标签和看点描述，再到题材分类入口找同组内容。同类型作品的主要差异通常在作画稳定性、设定自洽度和情绪真诚度上。</p>
+      </div>
+      <div class="faq-item">
+        <h4>更新动态多久调整一次？</h4>
+        <p>跟随实际播出节奏调整，新番更新日会优先反映在列表顶部。页面标注了数据时间，方便判断信息的新鲜度，收藏后回访比重新搜索更高效。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="section" id="comments">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛观众评论精选</h2>
+      <span class="sec-sub">来自近 30 天的真实讨论氛围</span>
+    </div>
+    <div class="cmt-list">
+
+      <div class="cmt"><div class="av" style="background:#ff7a59">林</div><div class="main"><div class="who"><b>林间小舟</b><span>2026-11-06</span></div><p>赤刃行记第 12 话的战斗段确实到位，前半段铺垫稍慢但后半段值回票价，追更党可以放心。</p><div class="like">👍 42</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#58d6c6">猫</div><div class="main"><div class="who"><b>猫町面包师</b><span>2026-11-05</span></div><p>海边的面包店完结了有点舍不得，这种一集一个短篇的结构真的适合睡前看，不烧脑。</p><div class="like">👍 38</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#9b8cff">雾</div><div class="main"><div class="who"><b>雾港路人</b><span>2026-11-04</span></div><p>雾港档案第 9 话把前面线索收了，建议新观众不要跳集，跳了会看不懂反转。</p><div class="like">👍 29</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#ffd166;color:#1a1c2b">星</div><div class="main"><div class="who"><b>星轨观测员</b><span>2026-11-03</span></div><p>星轨旅人前两集确实慢，我差点弃了，第三集开始世界观铺开就好看了，给点耐心。</p><div class="like">👍 25</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#c77dff">机</div><div class="main"><div class="who"><b>机库夜班</b><span>2026-11-02</span></div><p>零号机库战术描写偏硬，喜欢看机设和调度的人会爽，但想要快节奏的可能觉得闷。</p><div class="like">👍 21</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#8bd17c">逆</div><div class="main"><div class="who"><b>逆风第四棒</b><span>2026-11-01</span></div><p>逆风接力预赛段开始了，运动番果然还是要追更才有味道，每周等一集的感觉很好。</p><div class="like">👍 19</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#ff7a59">三</div><div class="main"><div class="who"><b>三分钟选手</b><span>2026-10-31</span></div><p>妖怪图鉴第二季上线了，还是三分钟内一集，通勤刷完一季刚好，笑点密度也够。</p><div class="like">👍 17</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#58d6c6">午</div><div class="main"><div class="who"><b>午后写信人</b><span>2026-10-30</span></div><p>午后三点的信情感处理很克制，我喜欢这种不喊出来的表达，但也有人觉得太平。</p><div class="like">👍 15</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#9b8cff">第</div><div class="main"><div class="who"><b>十三号邻居</b><span>2026-10-29</span></div><p>第十三号住户结局讨论度很高，我是周末一次补完的，中间断开确实会削弱压迫感。</p><div class="like">👍 14</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#ffd166;color:#1a1c2b">夏</div><div class="main"><div class="who"><b>夏末合唱</b><span>2026-10-28</span></div><p>夏末回声剧场版音乐段落完成度很高，一次看完的体验比拆开看好太多，推荐大屏。</p><div class="like">👍 13</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#c77dff">老</div><div class="main"><div class="who"><b>老番重看组</b><span>2026-10-27</span></div><p>这个页面的分类逻辑比单纯按热度排友好，至少我知道自己该看治愈还是烧脑了。</p><div class="like">👍 12</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#8bd17c">新</div><div class="main"><div class="who"><b>新入坑小张</b><span>2026-10-26</span></div><p>刚入坑三个月，从泡面番开始看确实门槛低，现在慢慢转到热血番，节奏刚好。</p><div class="like">👍 11</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#ff7a59">吐</div><div class="main"><div class="who"><b>吐槽不吐糟</b><span>2026-10-25</span></div><p>星轨旅人美术是真的好，但剧情推进有点慢，希望后半季能提速，不然容易劝退。</p><div class="like">👍 10</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#58d6c6">设</div><div class="main"><div class="who"><b>设定党老王</b><span>2026-10-24</span></div><p>零号机库的机设自洽度不错，没有为了帅牺牲逻辑，这点在机战番里算难得。</p><div class="like">👍 9</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#9b8cff">期</div><div class="main"><div class="who"><b>期待下一集</b><span>2026-10-23</span></div><p>希望更新动态能一直保持这个频率，追更党最怕信息滞后，现在这样挺方便。</p><div class="like">👍 8</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#ffd166;color:#1a1c2b">中</div><div class="main"><div class="who"><b>中立观众</b><span>2026-10-22</span></div><p>整体推荐还算中肯，没有一味吹，但热门榜里治愈番偏少，希望多补几部。</p><div class="like">👍 7</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#c77dff">群</div><div class="main"><div class="who"><b>群像爱好者</b><span>2026-10-21</span></div><p>最近群像番确实变多了，逆风接力和零号机库都是多线并进，看得很过瘾。</p><div class="like">👍 6</div></div></div>
+
+      <div class="cmt"><div class="av" style="background:#8bd17c">补</div><div class="main"><div class="who"><b>补番专业户</b><span>2026-10-20</span></div><p>完结番一次补完的体验还是比追更舒服，尤其是短篇，中间断开会掉情绪。</p><div class="like">👍 5</div></div></div>
+
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="section" id="news-feed">
+    <div class="sec-head">
+      <h2 class="sec-title">动漫岛相关资讯与动态</h2>
+      <span class="sec-sub">近期值得留意的几条消息</span>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="date">2026-11-06</div>
+        <h4>《赤刃行记》进入合战篇，作画阵容调整</h4>
+        <p>第 12 话开始进入小队合战段，官方公开了本篇章的原画阵容，战斗密度预计继续提升。</p>
+      </article>
+      <article class="news-card">
+        <div class="date">2026-11-05</div>
+        <h4>《海边的面包店》完结，短篇结构获好评</h4>
+        <p>全 12 话完结，单集独立的结构在观众中评价稳定，被认为是适合低注意力场景的代表作。</p>
+      </article>
+      <article class="news-card">
+        <div class="date">2026-11-04</div>
+        <h4>《雾港档案》线索回收节奏引讨论</h4>
+        <p>第 9 话首次集中回收前两集线索，观众对三集一回收的结构评价出现分化，但讨论度明显上升。</p>
+      </article>
+      <article class="news-card">
+        <div class="date">2026-11-02</div>
+        <h4>《星轨旅人》新增两名关键配角</h4>
+        <p>第 7 话主线正式展开，新增角色与主角团的关系成为后续剧情的重要变量。</p>
+      </article>
+      <article class="news-card">
+        <div class="date">2026-10-30</div>
+        <h4>《夏末回声》剧场版上线完整版</h4>
+        <p>剧场版新增一段未公开的合唱编排，音乐段落完整度进一步提升，适合大屏观看。</p>
+      </article>
+      <article class="news-card">
+        <div class="date">2026-10-28</div>
+        <h4>《三分钟妖怪图鉴》第二季全 24 话上线</h4>
+        <p>单集时长仍控制在三分钟以内，继续保持泡面番定位，适合碎片时间集中观看。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 订阅引导 -->
+  <section class="section" id="subscribe">
+    <div class="subscribe">
+      <h2>关注动漫岛更新提醒</h2>
+      <p>留下邮箱，新番更新、口碑变化和专题调整会第一时间同步给你。</p>
+      <form class="sub-form" onsubmit="return false;">
+        <input type="email" placeholder="请输入邮箱地址" aria-label="订阅邮箱">
+        <button type="submit">订阅更新</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer id="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>关于动漫岛专题</h5>
+        <p class="foot-desc">动漫岛是一个面向动漫观众的追番参考专题页，围绕热门新番、经典老番、题材分类与观看体验做系统整理。内容偏编辑视角，不做夸张推荐，帮助观众按场景和偏好选片。</p>
+      </div>
+      <div>
+        <h5>快速入口</h5>
+        <a href="/#hot-picks">热门推荐</a>
+        <a href="/#latest-updates">最新更新</a>
+        <a href="/#genre-cats">题材分类</a>
+        <a href="/#deep-analysis">深度解析</a>
+      </div>
+      <div>
+        <h5>帮助与答疑</h5>
+        <a href="/#watch-guide">追番指南</a>
+        <a href="/#faq-zone">常见问题</a>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news-feed">动漫资讯</a>
+      </div>
+      <div>
+        <h5>友情链接</h5>
+        <a href="/#site-nav">友情链接位 A</a>
+        <a href="/#site-nav">友情链接位 B</a>
+        <a href="/#site-nav">友情链接位 C</a>
+        <a href="/#site-nav">友情链接位 D</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 动漫岛专题 · 内容整理与信息参考</span>
+      <span>免责声明：本页内容为动漫题材信息整理与观看体验参考，不提供视频存储与播放服务，相关版权归原制作方所有。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+                                                                </html>
