@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>瓜子二手车官网-二手车直卖平台怎么用_车源推荐与买卖流程解析</title>
+<meta name="description" content="瓜子二手车官网相关内容专题：讲清二手车直卖平台的车源筛选、检测报告、价格参考与买卖流程，帮你判断瓜子二手车官网好不好用、适合哪些人、怎么挑到靠谱车源，并附常见问题与用户真实讨论。">
+<meta name="keywords" content="瓜子二手车官网,二手车直卖平台,二手车检测报告,二手车买卖流程,二手车车源">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Cpath d='M14 40c4-10 10-14 18-14s14 4 18 14' stroke='%23fbbf24' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='22' cy='44' r='5' fill='%23fff'/%3E%3Ccircle cx='42' cy='44' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --gz-ink:#0f2e2b;
+  --gz-ink-2:#26514c;
+  --gz-muted:#5f7a76;
+  --gz-line:#dfeae7;
+  --gz-bg:#f5faf8;
+  --gz-card:#ffffff;
+  --gz-main:#0f766e;
+  --gz-main-dark:#0b5a54;
+  --gz-accent:#f59e0b;
+  --gz-accent-soft:#fff5e2;
+  --gz-soft:#e8f4f1;
+  --gz-radius:14px;
+  --gz-shadow:0 6px 22px rgba(15,63,58,.08);
+  --gz-shadow-hover:0 12px 30px rgba(15,63,58,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  color:var(--gz-ink);
+  background:var(--gz-bg);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.35}
+p{margin:0 0 14px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+.gz-ico{display:inline-block;width:1em;height:1em;vertical-align:-.12em}
+
+/* ===== 顶部导航 ===== */
+.gz-topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--gz-line);
+}
+.gz-nav{display:flex;align-items:center;gap:18px;height:64px}
+.gz-logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;color:var(--gz-main-dark);white-space:nowrap}
+.gz-logo .dot{
+  width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--gz-main),#12a394);color:#fff;font-size:14px;font-weight:900;
+  box-shadow:0 4px 12px rgba(15,118,110,.32);
+}
+.gz-navlinks{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none}
+.gz-navlinks::-webkit-scrollbar{display:none}
+.gz-navlinks a{
+  padding:7px 11px;border-radius:9px;font-size:14px;color:var(--gz-ink-2);
+  white-space:nowrap;transition:.18s;
+}
+.gz-navlinks a:hover{background:var(--gz-soft);color:var(--gz-main-dark)}
+.gz-navbtn{
+  padding:8px 16px;border-radius:10px;font-size:14px;font-weight:700;
+  background:var(--gz-main);color:#fff;white-space:nowrap;box-shadow:0 4px 12px rgba(15,118,110,.26);
+}
+.gz-navbtn:hover{background:var(--gz-main-dark)}
+
+/* ===== Banner ===== */
+.gz-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 380px at 12% -10%,rgba(245,158,11,.18),transparent 60%),
+    radial-gradient(760px 360px at 88% 0%,rgba(18,163,148,.22),transparent 62%),
+    linear-gradient(165deg,#0d3b38,#0f5b54 58%,#127a6f);
+  color:#fff;
+  padding:52px 0 46px;
+}
+.gz-hero::after{
+  content:"";position:absolute;right:-90px;bottom:-120px;width:380px;height:380px;border-radius:50%;
+  border:38px solid rgba(255,255,255,.06);
+}
+.gz-hero .wrap{position:relative;z-index:2}
+.gz-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:.5px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+  padding:5px 13px;border-radius:999px;margin-bottom:16px;
+}
+.gz-hero h1{
+  font-size:clamp(26px,4.2vw,40px);font-weight:900;letter-spacing:.5px;margin-bottom:14px;
+}
+.gz-hero h1 em{font-style:normal;color:#ffd479}
+.gz-hero p.lead{font-size:16px;color:#d7ece8;max-width:760px;margin-bottom:8px}
+.gz-hero p.lead2{font-size:14.5px;color:#a9d3cd;max-width:760px;margin-bottom:24px}
+.gz-search{
+  display:flex;gap:10px;max-width:640px;background:#fff;padding:7px;border-radius:14px;
+  box-shadow:0 14px 34px rgba(0,0,0,.22);margin-bottom:20px;
+}
+.gz-search input{
+  flex:1;border:0;outline:0;padding:10px 14px;font-size:15px;color:var(--gz-ink);
+  background:transparent;
+}
+.gz-search button{
+  border:0;cursor:pointer;padding:11px 22px;border-radius:10px;font-size:15px;font-weight:800;
+  background:linear-gradient(135deg,var(--gz-accent),#f97316);color:#3a2200;
+}
+.gz-search button:hover{filter:brightness(1.05)}
+.gz-herobtns{display:flex;flex-wrap:wrap;gap:9px}
+.gz-herobtns a{
+  font-size:13.5px;padding:7px 14px;border-radius:999px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);color:#e6f5f2;
+  transition:.18s;
+}
+.gz-herobtns a:hover{background:#fff;color:var(--gz-main-dark);border-color:#fff}
+
+/* ===== 通用 section ===== */
+.gz-sec{padding:44px 0}
+.gz-sec:nth-of-type(even){background:#fff}
+.gz-sechead{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.gz-sechead h2{font-size:clamp(20px,2.6vw,26px);font-weight:900;letter-spacing:.3px;position:relative;padding-left:14px}
+.gz-sechead h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:4px;
+  background:linear-gradient(180deg,var(--gz-main),var(--gz-accent));
+}
+.gz-sechead .sub{font-size:13.5px;color:var(--gz-muted);max-width:640px}
+.gz-sechead .more{font-size:13.5px;font-weight:700;color:var(--gz-main);white-space:nowrap}
+.gz-sechead .more:hover{text-decoration:underline}
+
+/* ===== 简介 ===== */
+.gz-intro{
+  display:grid;grid-template-columns:1.55fr 1fr;gap:26px;align-items:start;
+}
+.gz-intro-main{
+  background:var(--gz-card);border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:26px 26px 14px;box-shadow:var(--gz-shadow);
+}
+.gz-intro-main h3{font-size:18px;margin-bottom:12px;color:var(--gz-main-dark)}
+.gz-intro-main p{font-size:15px;color:#33544f;text-indent:2em}
+.gz-intro-side{display:grid;gap:12px}
+.gz-stat{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:14px 16px;box-shadow:var(--gz-shadow);display:flex;gap:12px;align-items:center;
+}
+.gz-stat .num{font-size:22px;font-weight:900;color:var(--gz-main);line-height:1}
+.gz-stat .lbl{font-size:13px;color:var(--gz-muted)}
+
+/* ===== 分类入口 ===== */
+.gz-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gz-cat{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:16px 16px 14px;box-shadow:var(--gz-shadow);transition:.2s;display:block;
+}
+.gz-cat:hover{transform:translateY(-4px);box-shadow:var(--gz-shadow-hover);border-color:#bfe3dc}
+.gz-cat .ci{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:18px;
+  background:var(--gz-soft);color:var(--gz-main-dark);margin-bottom:10px;
+}
+.gz-cat b{display:block;font-size:15px;margin-bottom:4px}
+.gz-cat span{font-size:12.5px;color:var(--gz-muted);line-height:1.6}
+
+/* ===== 推荐卡片 ===== */
+.gz-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gz-card{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  overflow:hidden;box-shadow:var(--gz-shadow);transition:.22s;display:flex;flex-direction:column;
+}
+.gz-card:hover{transform:translateY(-5px);box-shadow:var(--gz-shadow-hover)}
+.gz-cover{
+  height:118px;position:relative;display:flex;align-items:flex-end;padding:12px 14px;
+  color:#fff;font-weight:900;font-size:15px;letter-spacing:.5px;
+}
+.gz-cover::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(15,118,110,.9),rgba(18,163,148,.55));
+}
+.gz-cover.c2::before{background:linear-gradient(135deg,rgba(245,158,11,.92),rgba(249,115,22,.6))}
+.gz-cover.c3::before{background:linear-gradient(135deg,rgba(30,64,120,.92),rgba(59,130,246,.55))}
+.gz-cover.c4::before{background:linear-gradient(135deg,rgba(88,28,135,.9),rgba(168,85,247,.55))}
+.gz-cover.c5::before{background:linear-gradient(135deg,rgba(6,95,70,.92),rgba(16,185,129,.55))}
+.gz-cover.c6::before{background:linear-gradient(135deg,rgba(120,53,15,.9),rgba(217,119,6,.55))}
+.gz-cover em{position:relative;z-index:2;font-style:normal;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.gz-cover .badge{
+  position:absolute;top:10px;right:10px;z-index:2;font-size:11.5px;font-weight:700;
+  background:rgba(255,255,255,.9);color:var(--gz-main-dark);padding:2px 9px;border-radius:999px;
+}
+.gz-cardbody{padding:14px 15px 15px;flex:1;display:flex;flex-direction:column}
+.gz-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:9px}
+.gz-tags i{
+  font-style:normal;font-size:11.5px;padding:2px 8px;border-radius:999px;
+  background:var(--gz-soft);color:var(--gz-main-dark);
+}
+.gz-tags i.hot{background:var(--gz-accent-soft);color:#a15c00}
+.gz-cardbody h4{font-size:15.5px;margin-bottom:7px}
+.gz-cardbody p{font-size:13.5px;color:var(--gz-muted);line-height:1.7;margin-bottom:10px;flex:1}
+.gz-meta{display:flex;justify-content:space-between;font-size:12.5px;color:#8aa5a0;border-top:1px dashed var(--gz-line);padding-top:9px}
+.gz-meta b{color:var(--gz-accent);font-weight:800}
+
+/* ===== 最新更新列表 ===== */
+.gz-updates{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gz-upd{
+  display:flex;gap:12px;background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:13px 15px;box-shadow:var(--gz-shadow);transition:.2s;
+}
+.gz-upd:hover{transform:translateY(-3px);box-shadow:var(--gz-shadow-hover)}
+.gz-upd .t{
+  flex:none;width:52px;text-align:center;font-size:12px;color:var(--gz-main-dark);font-weight:800;
+  background:var(--gz-soft);border-radius:9px;padding:6px 0;line-height:1.5;
+}
+.gz-upd .t small{display:block;font-weight:600;color:var(--gz-muted);font-size:11px}
+.gz-upd h4{font-size:14.5px;margin-bottom:3px}
+.gz-upd p{font-size:13px;color:var(--gz-muted);margin:0}
+
+/* ===== 深度正文 ===== */
+.gz-article{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:30px 30px 22px;box-shadow:var(--gz-shadow);
+}
+.gz-article h3{font-size:18.5px;margin:22px 0 10px;color:var(--gz-main-dark)}
+.gz-article h3:first-child{margin-top:0}
+.gz-article p{font-size:15.2px;color:#2f514c;text-indent:2em}
+.gz-article p.noindent{text-indent:0}
+.gz-quote{
+  border-left:4px solid var(--gz-accent);background:var(--gz-accent-soft);
+  padding:12px 16px;border-radius:0 10px 10px 0;font-size:14px;color:#7a4a00;margin:16px 0;
+}
+.gz-quote b{color:#5c3700}
+
+/* ===== 两栏布局（解析 + 侧栏） ===== */
+.gz-split{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.gz-aside{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:18px;box-shadow:var(--gz-shadow);position:sticky;top:82px;
+}
+.gz-aside h4{font-size:15px;margin-bottom:12px;color:var(--gz-main-dark)}
+.gz-aside ol{counter-reset:gzi}
+.gz-aside ol li{
+  counter-increment:gzi;position:relative;padding-left:28px;font-size:13.8px;color:#3a5d58;
+  margin-bottom:11px;line-height:1.65;
+}
+.gz-aside ol li::before{
+  content:counter(gzi);position:absolute;left:0;top:2px;width:19px;height:19px;border-radius:6px;
+  background:var(--gz-soft);color:var(--gz-main-dark);font-size:11.5px;font-weight:800;
+  display:grid;place-items:center;
+}
+.gz-aside .tip{font-size:12.5px;color:var(--gz-muted);border-top:1px dashed var(--gz-line);padding-top:12px}
+
+/* ===== 数据看板 ===== */
+.gz-dash{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gz-dcard{
+  background:linear-gradient(160deg,#fff,#f3fbf9);border:1px solid var(--gz-line);
+  border-radius:var(--gz-radius);padding:18px;box-shadow:var(--gz-shadow);text-align:center;
+}
+.gz-dcard .v{font-size:26px;font-weight:900;color:var(--gz-main);line-height:1.2}
+.gz-dcard .k{font-size:13px;color:var(--gz-muted);margin-top:4px}
+.gz-bar{height:7px;border-radius:99px;background:var(--gz-soft);margin-top:12px;overflow:hidden}
+.gz-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gz-main),#12a394)}
+
+/* ===== FAQ 手风琴 ===== */
+.gz-faq{display:grid;gap:10px;max-width:900px}
+.gz-faq details{
+  background:#fff;border:1px solid var(--gz-line);border-radius:12px;
+  padding:14px 18px;box-shadow:var(--gz-shadow);transition:.2s;
+}
+.gz-faq details[open]{border-color:#b7e0d8;background:#fbfffe}
+.gz-faq summary{
+  cursor:pointer;font-size:15px;font-weight:700;color:var(--gz-ink);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.gz-faq summary::-webkit-details-marker{display:none}
+.gz-faq summary::after{
+  content:"+";flex:none;width:22px;height:22px;border-radius:7px;background:var(--gz-soft);
+  color:var(--gz-main-dark);display:grid;place-items:center;font-weight:800;font-size:15px;
+}
+.gz-faq details[open] summary::after{content:"−"}
+.gz-faq .ans{font-size:14px;color:#3d5f5a;margin-top:10px;line-height:1.8}
+
+/* ===== 评论 ===== */
+.gz-comments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gz-cmt{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:14px 16px;box-shadow:var(--gz-shadow);
+}
+.gz-cmt .who{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.gz-cmt .av{
+  width:32px;height:32px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:13px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--gz-main),#12a394);
+}
+.gz-cmt .nm{font-size:13.5px;font-weight:800}
+.gz-cmt .tm{font-size:11.5px;color:#93aeaa;margin-left:auto}
+.gz-cmt p{font-size:13.6px;color:#3d5f5a;margin:0;line-height:1.72}
+.gz-cmt .stars{font-size:12px;color:var(--gz-accent);margin-bottom:5px;letter-spacing:1px}
+
+/* ===== 资讯 ===== */
+.gz-news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gz-newscard{
+  background:#fff;border:1px solid var(--gz-line);border-radius:var(--gz-radius);
+  padding:16px 17px;box-shadow:var(--gz-shadow);transition:.2s;display:flex;flex-direction:column;
+}
+.gz-newscard:hover{transform:translateY(-4px);box-shadow:var(--gz-shadow-hover)}
+.gz-newscard .dt{font-size:12px;color:var(--gz-main);font-weight:800;margin-bottom:7px}
+.gz-newscard h4{font-size:15px;margin-bottom:7px;line-height:1.55}
+.gz-newscard p{font-size:13.2px;color:var(--gz-muted);margin:0;flex:1}
+
+/* ===== 订阅 ===== */
+.gz-sub{
+  background:linear-gradient(135deg,#0d3b38,#127a6f);color:#fff;border-radius:18px;
+  padding:34px 30px;display:grid;grid-template-columns:1.4fr 1fr;gap:22px;align-items:center;
+  box-shadow:0 16px 40px rgba(13,59,56,.22);
+}
+.gz-sub h2{font-size:22px;margin-bottom:8px}
+.gz-sub p{font-size:14px;color:#bfe0db;margin:0}
+.gz-sub form{display:flex;gap:8px;background:#fff;padding:6px;border-radius:12px}
+.gz-sub input{flex:1;border:0;outline:0;padding:10px 12px;font-size:14px;border-radius:8px}
+.gz-sub button{
+  border:0;cursor:pointer;padding:10px 18px;border-radius:8px;font-weight:800;font-size:14px;
+  background:linear-gradient(135deg,var(--gz-accent),#f97316);color:#3a2200;
+}
+
+/* ===== 页脚 ===== */
+.gz-foot{
+  background:#0b2e2b;color:#9fc4be;padding:40px 0 22px;font-size:13.5px;margin-top:10px;
+}
+.gz-footgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px}
+.gz-foot h5{color:#e8f7f4;font-size:14.5px;margin-bottom:12px}
+.gz-foot p{color:#87b0aa;line-height:1.8;font-size:13px}
+.gz-foot li{margin-bottom:8px}
+.gz-foot a:hover{color:#ffd479}
+.gz-foothr{border:0;border-top:1px solid rgba(255,255,255,.12);margin:0 0 16px}
+.gz-copy{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7ea7a1}
+
+@media(max-width:960px){
+  .gz-intro,.gz-split{grid-template-columns:1fr}
+  .gz-aside{position:static}
+  .gz-cats{grid-template-columns:repeat(2,1fr)}
+  .gz-cards,.gz-news{grid-template-columns:repeat(2,1fr)}
+  .gz-dash{grid-template-columns:repeat(2,1fr)}
+  .gz-comments{grid-template-columns:1fr}
+  .gz-sub{grid-template-columns:1fr}
+  .gz-footgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .gz-sec{padding:32px 0}
+  .gz-updates{grid-template-columns:1fr}
+  .gz-cards,.gz-news,.gz-cats{grid-template-columns:1fr}
+  .gz-hero{padding:38px 0 34px}
+  .gz-search{flex-direction:column}
+  .gz-intro-main,.gz-article{padding:20px 18px}
+  .gz-nav{height:58px;gap:10px}
+  .gz-logo span.txt{font-size:16px}
+  .gz-footgrid{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<header class="gz-topbar">
+  <div class="wrap gz-nav">
+    <a class="gz-logo" href="/#gz-home">
+      <span class="dot">瓜</span><span class="txt">瓜子二手车官网</span>
+    </a>
+    <nav class="gz-navlinks">
+      <a href="/#gz-home">首页</a>
+      <a href="/#gz-intro">平台简介</a>
+      <a href="/#gz-cats">车源分类</a>
+      <a href="/#gz-hot">热门车源</a>
+      <a href="/#gz-updates">最新动态</a>
+      <a href="/#gz-deep">深度解析</a>
+      <a href="/#gz-guide">选购指南</a>
+      <a href="/#gz-faq">常见问题</a>
+      <a href="/#gz-comments">用户评论</a>
+      <a href="/#gz-news">资讯</a>
+    </nav>
+    <a class="gz-navbtn" href="/#gz-sub">订阅更新</a>
+  </div>
+</header>
+
+<!-- ===== 首屏 Banner ===== -->
+<section class="gz-hero" id="gz-home">
+  <div class="wrap">
+    <span class="gz-kicker">🚗 二手车直卖 · 车源参考 · 买卖流程</span>
+    <h1>瓜子二手车官网：<em>二手车直卖平台</em>车源与买卖流程全解析</h1>
+    <p class="lead">想弄清楚瓜子二手车官网到底怎么看车、怎么比价、怎么走完整个交易流程，这一页把平台逻辑、车源结构、检测报告和注意点一次讲清。</p>
+    <p class="lead2">从车源筛选到过户交付，从价格参考到检测细节，专题整理常见疑问与真实用户讨论，适合第一次接触二手车直卖平台、或准备换车的朋友慢慢翻。</p>
+    <form class="gz-search" onsubmit="return false;">
+      <input type="search" placeholder="搜索车源：车型 / 预算 / 城市 / 年限" aria-label="搜索车源">
+      <button type="button">搜车源</button>
+    </form>
+    <div class="gz-herobtns">
+      <a href="/#gz-hot">热门车源</a>
+      <a href="/#gz-cats">按价格选车</a>
+      <a href="/#gz-updates">最新上架</a>
+      <a href="/#gz-guide">新手购车顺序</a>
+      <a href="/#gz-deep">检测报告怎么看</a>
+      <a href="/#gz-faq">过户流程答疑</a>
+      <a href="/#gz-comments">车主真实反馈</a>
+      <a href="/#gz-news">行业动态</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 平台简介 ===== -->
+<section class="gz-sec" id="gz-intro">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>瓜子二手车官网是做什么的：先弄清平台定位</h2>
+        <div class="sub">这一节回答“值不值得看”“适合谁看”，把平台角色和页面能提供的参考价值说清楚。</div>
+      </div>
+      <a class="more" href="/#gz-deep">继续读深度解析 →</a>
+    </div>
+
+    <div class="gz-intro">
+      <div class="gz-intro-main">
+        <h3>关于瓜子二手车官网的基本认识</h3>
+        <p>瓜子二手车官网对应的核心需求，是“买一台放心的二手车”。用户打开这个站，往往不是想了解品牌故事，而是想快速确认三件事：车源多不多、车况能不能查、价格是不是透明。所以它的页面组织一般围绕车源列表、车型分类、检测报告和交易流程展开，而不是堆砌宣传语。</p>
+        <p>从内容消费角度看，二手车直卖平台的价值在于把分散的车源集中到一个入口。传统二手车市场看车要跑多个车商，车况描述全凭口头；而在瓜子二手车官网这类平台上，车源会带上年限、里程、过户次数、检测项等结构化信息，用户可以先用筛选条件缩小范围，再决定要不要约看。这种“先筛后看”的节奏，对时间紧、又不熟悉车的买家更友好。</p>
+        <p>本页不替代平台本身，而是把“第一次接触瓜子二手车官网的人常问什么、该按什么顺序看、哪些细节容易被忽略”整理成可读的专题。适合准备入手第一台代步车、家庭第二台车、或者想卖掉旧车换新车的用户。你可以把它当成一份前置功课：先理解流程，再去看车，心里更有底。</p>
+        <p>页面会持续更新车源趋势、检测报告解读、过户环节提醒和用户真实讨论，建议收藏后分次阅读。对二手车这种决策周期较长的消费来说，多看几轮、多对比几个维度，往往比一次性冲动下单更稳妥。</p>
+      </div>
+      <aside class="gz-intro-side">
+        <div class="gz-stat"><div class="num">3步</div><div class="lbl">选车 → 验车 → 过户，主线流程清晰</div></div>
+        <div class="gz-stat"><div class="num">8类</div><div class="lbl">按价格、车型、能源类型分入口</div></div>
+        <div class="gz-stat"><div class="num">6问</div><div class="lbl">新手最常问的问题集中答疑</div></div>
+        <div class="gz-stat"><div class="num">每周</div><div class="lbl">更新车源动态与行业资讯</div></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 分类入口 ===== -->
+<section class="gz-sec" id="gz-cats">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>按需求找车：8 个常用分类入口</h2>
+        <div class="sub">不同预算、不同用途，看车重点完全不同。先从分类进入，比漫无目的刷列表效率高得多。</div>
+      </div>
+    </div>
+    <div class="gz-cats">
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">💰</div><b>5万以内代步车</b><span>通勤为主，关注油耗、保养成本和年检状态。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">🚙</div><b>SUV 家用车</b><span>空间与通过性优先，适合家庭出行与长途。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">⚡</div><b>新能源二手车</b><span>重点看电池健康、质保剩余和充电条件。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">🏙️</div><b>准新车 / 低里程</b><span>年限短、里程低，价格通常仍比新车友好。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">🛠️</div><b>高保值车型</b><span>后期转手更容易，适合三五年内换车的人。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">👨‍👩‍👧</div><b>七座 / 大空间</b><span>多孩家庭或经常满载出行，关注第三排实用性。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">📄</div><b>可过户车源</b><span>手续齐全、权属清晰，交易环节更省心。</span></a>
+      <a class="gz-cat" href="/#gz-cats"><div class="ci">🔍</div><b>带检测报告车源</b><span>车况有结构化记录，适合不懂车的新手优先看。</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 热门车源推荐 ===== -->
+<section class="gz-sec" id="gz-hot">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>热门车源参考：6 类典型车源怎么挑</h2>
+        <div class="sub">以下为模拟示例，用于说明在瓜子二手车官网这类平台上，不同车源的关注重点和判断维度。</div>
+      </div>
+      <a class="more" href="/#gz-updates">查看最新上架 →</a>
+    </div>
+    <div class="gz-cards">
+
+      <article class="gz-card">
+        <div class="gz-cover c2"><span class="badge">热度 9.2</span><em>紧凑型代步车</em></div>
+        <div class="gz-cardbody">
+          <div class="gz-tags"><i>5万级</i><i>低油耗</i><i class="hot">新手友好</i></div>
+          <h4>三年车龄紧凑轿车 · 城市通勤向</h4>
+          <p>这个价位段车源最多，也最容易挑花眼。重点看保养记录是否连续、是否有过重大事故、年检是否临期，别只盯着价格。</p>
+          <div class="gz-meta"><span>里程 4.2 万公里</span><b>参考价 4.8 万起</b></div>
+        </div>
+      </article>
+
+      <article class="gz-card">
+        <div class="gz-cover"><span class="badge">热度 8.7</span><em>家用 SUV</em></div>
+        <div class="gz-cardbody">
+          <div class="gz-tags"><i>空间大</i><i>家用首选</i><i>可过户</i></div>
+          <h4>五年内家用 SUV · 空间与舒适兼顾</h4>
+          <p>SUV 二手性价比通常比新车更明显。看车时注意底盘有无托底痕迹、轮胎磨损是否均匀，这两点能侧面反映使用强度。</p>
+          <div class="gz-meta"><span>里程 6.8 万公里</span><b>参考价 9.6 万起</b></div>
+        </div>
+      </article>
+
+      <article class="gz-card">
+        <div class="gz-cover c5"><span class="badge">关注 8.9</span><em>新能源准新车</em></div>
+        <div class="gz-cardbody">
+          <div class="gz-tags"><i>电池质保</i><i>低里程</i><i class="hot">热度上升</i></div>
+          <h4>两年内新能源轿车 · 电池健康优先</h4>
+          <p>新能源二手车最关键的不是外观，而是电池健康度和剩余质保。建议优先选能查电池检测数据、且仍在质保期内的车源。</p>
+          <div class="gz-meta"><span>里程 2.1 万公里</span><b>参考价 11.2 万起</b></div>
+        </div>
+      </article>
+
+      <article class="gz-card">
+        <div class="gz-cover c3"><span class="badge">口碑 8.5</span><em>高保值轿车</em></div>
+        <div class="gz-cardbody">
+          <div class="gz-tags"><i>保值率高</i><i>维修便宜</i><i>配件充足</i></div>
+          <h4>保值率靠前轿车 · 后期换车更从容</h4>
+          <p>如果你打算三五年内再换车，保值率比配置更值得算一笔账。保有量大的车型，维修网点多、配件价格透明，用车成本更可控。</p>
+          <div class="gz-meta"><span>里程 5.5 万公里</span><b>参考价 8.9 万起</b></div>
+        </div>
+      </article>
+
+      <article class="gz-card">
+        <div class="gz-cover c4"><span class="badge">讨论 8.3</span><em>七座 MPV</em></div>
+        <div class="gz-cardbody">
+          <div class="gz-tags"><i>多孩家庭</i><i>大空间</i><i>长途舒适</i></div>
+          <h4>七座 MPV · 家庭多人出行方案</h4>
+          <p>七座车要看第三排是否真能坐人，而不是只看座位数。二手 MPV 还要留意滑门机构、座椅滑轨和空调系统的工作状态。</p>
+          <div class="gz-meta"><span>里程 7.4 万公里</span><b>参考价 13.5 万起</b></div>
+        </div>
+      </article>
+
+      <article class="gz-card">
+        <div class="gz-cover c6"><span class="badge">新上 8.1</span><em>手动挡练手车</em></div>
+        <div class="gz-cardbody">
+          <div class="gz-tags"><i>低价位</i><i>练手过渡</i><i>结构简单</i></div>
+          <h4>手动挡练手车 · 新手过渡选择</h4>
+          <p>预算有限又想先练手，手动挡小车是不错的选择。重点确认离合器状态、变速箱有无异响，以及是否容易通过年检。</p>
+          <div class="gz-meta"><span>里程 8.9 万公里</span><b>参考价 2.6 万起</b></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 最新更新 ===== -->
+<section class="gz-sec" id="gz-updates">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>最新动态与上架提醒</h2>
+        <div class="sub">模拟展示车源更新与平台动态的记录形式，帮助你理解“持续关注”比“一次刷完”更有效。</div>
+      </div>
+      <a class="more" href="/#gz-news">更多资讯 →</a>
+    </div>
+    <div class="gz-updates">
+      <div class="gz-upd"><div class="t">11-07<small>今日</small></div><div><h4>多款 5 万级代步车集中上架</h4><p>适合预算有限、以通勤为主的买家，建议先看检测报告再约看。</p></div></div>
+      <div class="gz-upd"><div class="t">11-06<small>更新</small></div><div><h4>新能源车源新增电池健康说明</h4><p>部分车源补充了电池检测维度，选购时可重点对比质保剩余时间。</p></div></div>
+      <div class="gz-upd"><div class="t">11-05<small>动态</small></div><div><h4>周末看车预约量上升</h4><p>热门车型约看时段较紧，建议提前规划路线，一次多看几台。</p></div></div>
+      <div class="gz-upd"><div class="t">11-04<small>提醒</small></div><div><h4>过户材料清单更新提示</h4><p>不同城市要求略有差异，交易前建议再确认当地车管所规定。</p></div></div>
+      <div class="gz-upd"><div class="t">11-03<small>更新</small></div><div><h4>家用 SUV 车源数量增加</h4><p>中大型 SUV 选择变多，适合家庭用户对比空间与油耗。</p></div></div>
+      <div class="gz-upd"><div class="t">11-02<small>动态</small></div><div><h4>高保值车型关注度回升</h4><p>计划短期换车的用户，开始更多关注保值率与流通速度。</p></div></div>
+      <div class="gz-upd"><div class="t">11-01<small>更新</small></div><div><h4>准新车专区车源补充</h4><p>低里程车源增加，价格通常仍低于同款新车，适合追求性价比的人。</p></div></div>
+      <div class="gz-upd"><div class="t">10-31<small>提醒</small></div><div><h4>年底购车注意事项汇总</h4><p>年检、保险到期时间要提前核对，避免接手后短期集中支出。</p></div></div>
+      <div class="gz-upd"><div class="t">10-30<small>动态</small></div><div><h4>七座车型讨论热度走高</h4><p>多孩家庭出行需求带动 MPV 与中大型 SUV 关注度。</p></div></div>
+      <div class="gz-upd"><div class="t">10-29<small>更新</small></div><div><h4>检测报告解读栏目补充内容</h4><p>新增对事故、泡水、火烧等关键项的说明，便于新手理解。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 深度解析 ===== -->
+<section class="gz-sec" id="gz-deep">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>深度解析：瓜子二手车官网这类平台，到底该怎么用</h2>
+        <div class="sub">从车源结构、检测报告、价格逻辑到交易节奏，拆开讲清楚。</div>
+      </div>
+    </div>
+    <div class="gz-split">
+      <article class="gz-article">
+        <h3>一、先理解“直卖”的含义，再谈价格</h3>
+        <p>很多人第一次搜瓜子二手车官网，是带着“是不是更便宜”的疑问进来的。直卖模式的核心并不是无条件低价，而是缩短中间环节、把车源信息更集中地呈现出来。对买家来说，好处是能在同一套标准下横向比较；对卖家来说，好处是曝光更集中。理解这一点，就不会把“平台报价”简单等同于“市场最低价”，而是把它当成一个可参考的坐标。</p>
+        <p>实际看车时，建议把平台价格、同城同款报价、车况差异三项放在一起对照。同样年款的车，里程差两万公里、保养记录完整度不同，价格差几千到上万都正常。只盯数字高低，很容易忽略车况这个真正的变量。</p>
+
+        <h3>二、检测报告要看“结论”，也要看“过程”</h3>
+        <p>二手车最怕信息不对称。检测报告的价值，在于把外观、结构件、发动机舱、内饰、底盘等部分拆成可读的条目。新手常犯的错是只看最后一句“车况良好”，而忽略中间的具体描述。更稳妥的做法是：先看有没有结构件损伤、泡水、火烧这类关键项，再看易损件和外观修复记录，最后结合里程与年限判断整体使用强度。</p>
+        <div class="gz-quote"><b>小提醒：</b>检测报告是判断依据，不是免检通行证。约看时仍建议实地确认发动机冷启动状态、变速箱换挡平顺性、轮胎与刹车片磨损，这些细节报告未必全部覆盖。</div>
+
+        <h3>三、价格之外，算清“落地总成本”</h3>
+        <p>二手车消费容易被“车价”单一数字带偏。真正影响体验的是落地总成本：过户费用、保险续保、近期保养项目、轮胎更换、可能的整备支出。比如一台价格略低但轮胎接近寿命终点的车，接手后很快要换四条胎，实际支出并不低。反过来，价格稍高但保养记录连续、易损件刚更换过的车源，长期看反而更省心。</p>
+
+        <h3>四、不同人群的看车顺序不一样</h3>
+        <p>通勤代步人群，优先看油耗、年检状态和维修便利性；家庭用户，优先看空间、安全配置和后排舒适度；计划短期换车的人，优先看保值率与流通速度；第一次买车的新手，则更应该优先看车况透明度与手续完整性。瓜子二手车官网这类平台的车源分类，本质上就是帮不同人群快速缩小范围，但最终判断仍要回到自己的用车场景。</p>
+
+        <h3>五、交易节奏：别被“限时”推着走</h3>
+        <p>二手车是典型的大额非标消费，决策周期长很正常。看到心动车源时，可以先记录关键信息，隔一天再复核一遍需求是否匹配。约看、验车、谈价、签约、过户，每一步都留出确认时间，比仓促下定更稳。平台提供的是信息和流程支持，真正的判断仍然在买家自己手里。</p>
+
+        <h3>六、搜索这个词的人，通常想确认什么</h3>
+        <p>综合来看，搜索瓜子二手车官网的用户，大多想确认三件事：平台车源是否真实可查、检测与手续是否规范、自己该按什么顺序完成交易。把这三点想清楚，再去浏览具体车源，效率会明显提高。下面几节分别从体验、常见问题和用户讨论角度继续补充。</p>
+      </article>
+
+      <aside class="gz-aside">
+        <h4>看车前的 6 步自查</h4>
+        <ol>
+          <li>明确预算上限，含过户与保险。</li>
+          <li>确定用途：通勤、家用还是过渡。</li>
+          <li>先筛车况透明度高的车源。</li>
+          <li>核对年检、保险到期时间。</li>
+          <li>约看时实地确认关键部件。</li>
+          <li>签约前复核手续与权属。</li>
+        </ol>
+        <div class="tip">以上为通用建议，具体以当地车管所与平台实际规则为准。</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 体验指南 ===== -->
+<section class="gz-sec" id="gz-guide">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>浏览体验指南：怎样把这个页面用得更顺</h2>
+        <div class="sub">专题页不是平台替代品，但可以作为你的“看车前功课”和“对比笔记”。</div>
+      </div>
+    </div>
+    <div class="gz-dash">
+      <div class="gz-dcard"><div class="v">筛选</div><div class="k">按价格、车型、能源类型快速缩小范围</div><div class="gz-bar"><i style="width:88%"></i></div></div>
+      <div class="gz-dcard"><div class="v">对比</div><div class="k">同价位车源横向看车况与里程差异</div><div class="gz-bar"><i style="width:76%"></i></div></div>
+      <div class="gz-dcard"><div class="v">追更</div><div class="k">收藏页面，隔几天回来看新上架车源</div><div class="gz-bar"><i style="width:69%"></i></div></div>
+      <div class="gz-dcard"><div class="v">答疑</div><div class="k">先看 FAQ 再提问，减少重复沟通成本</div><div class="gz-bar"><i style="width:82%"></i></div></div>
+    </div>
+    <div class="gz-article" style="margin-top:18px">
+      <p>移动端浏览时，建议优先使用分类入口和 FAQ 两块：前者帮你快速定位需求，后者帮你避开常见误区。桌面端则适合把推荐卡片和深度解析对照着看，一边记录候选车源，一边核对判断维度。页面内的所有栏目都做了锚点，点导航即可跳转，适合反复回看。</p>
+      <p>如果你是第一次接触二手车，建议按“简介 → 深度解析 → FAQ → 评论”的顺序阅读；如果已经有明确目标车型，直接从分类入口和最新动态进入更高效。相关推荐和资讯模块可以帮你扩展视野，但最终决策仍应以实地验车和手续核验为准。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="gz-sec" id="gz-faq">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>常见问题：关于瓜子二手车官网的高频疑问</h2>
+        <div class="sub">以下回答围绕内容消费与选购判断展开，具体规则以平台与当地政策为准。</div>
+      </div>
+    </div>
+    <div class="gz-faq">
+      <details open>
+        <summary>瓜子二手车官网适合完全不懂车的新手吗？</summary>
+        <div class="ans">相对适合，但前提是你要会用。新手最大的优势是愿意按流程走，劣势是缺少车况判断经验。建议优先看带检测报告、手续清晰的车源，把报告里的结构件、泡水、火烧等关键项逐条看完，再约实地看车。不要只看价格和外观，也不要跳过手续核验这一步。</div>
+      </details>
+      <details>
+        <summary>平台上的车源价格是不是一定比车商便宜？</summary>
+        <div class="ans">不一定。直卖模式减少中间环节，但价格仍受车况、里程、地区供需影响。更合理的做法是把平台报价当作参考坐标，再对比同城同款、同车况的市场价。如果某台车明显低于同款均价，反而要更仔细核对车况与手续，避免只看数字做判断。</div>
+      </details>
+      <details>
+        <summary>检测报告应该重点看哪几项？</summary>
+        <div class="ans">先看结构件有无损伤、是否涉及泡水或火烧，这三项直接关系安全与价值；再看发动机舱、变速箱、底盘描述；最后看外观修复记录和易损件状态。报告是判断依据，不是免检证明，实地看车时仍要确认冷启动、换挡平顺性和轮胎刹车状态。</div>
+      </details>
+      <details>
+        <summary>买二手车一般按什么顺序走流程？</summary>
+        <div class="ans">常见顺序是：明确预算与用途 → 筛选车源 → 阅读检测信息 → 预约实地看车 → 确认车况与价格 → 核验手续与权属 → 签约 → 办理过户与保险变更。每一步都建议留出确认时间，尤其是手续核验和过户环节，不同城市要求存在差异，提前问清能少跑冤枉路。</div>
+      </details>
+      <details>
+        <summary>新能源二手车要额外注意什么？</summary>
+        <div class="ans">重点看电池健康度、剩余质保和充电条件。电池是新能源车最核心的成本项，建议优先选择能提供电池检测数据、且仍在质保期内的车源。同时确认随车充电设备是否齐全，以及所在小区是否具备安装充电桩的条件，这些都会影响实际使用体验。</div>
+      </details>
+      <details>
+        <summary>这个专题页和瓜子二手车官网是什么关系？</summary>
+        <div class="ans">本页是围绕该关键词整理的内容专题，用于帮助读者理解平台定位、车源结构、检测报告和交易流程，提供阅读与判断参考，不替代平台实际功能。具体车源、价格、服务规则请以平台实时展示和官方说明为准，交易前务必自行核验相关信息。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 用户评论 ===== -->
+<section class="gz-sec" id="gz-comments">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>用户讨论：真实语气下的看车体验</h2>
+        <div class="sub">以下为模拟评论，覆盖推荐、吐槽、观望与经验分享等不同语气。</div>
+      </div>
+    </div>
+    <div class="gz-comments">
+      <div class="gz-cmt"><div class="who"><div class="av">林</div><div class="nm">林间小路</div><div class="tm">11-06</div></div><div class="stars">★★★★★</div><p>第一次买二手车，就是照着这类专题先把流程看了一遍。最大的收获是知道要先看检测报告里的结构件，而不是一上来就问最低多少钱。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">陈</div><div class="nm">陈默开车</div><div class="tm">11-05</div></div><div class="stars">★★★★☆</div><p>车源确实多，但多也意味着要会筛。我按预算和能源类型先过滤，再看里程和保养记录，效率比一开始乱翻高太多了。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">阿</div><div class="nm">阿森纳的猫</div><div class="tm">11-04</div></div><div class="stars">★★★☆☆</div><p>说点中性的：平台信息整理得不错，但价格还是得自己比。同款车不同车况差几千很正常，别指望一个页面就给你标准答案。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">周</div><div class="nm">周末去看海</div><div class="tm">11-03</div></div><div class="stars">★★★★★</div><p>家庭第二台车，重点看空间和保养成本。专题里按用途分类那段挺实用，直接帮我排除了几个看着便宜但后期费用高的选项。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">李</div><div class="nm">李工不加班</div><div class="tm">11-02</div></div><div class="stars">★★★★☆</div><p>新能源那段提醒得好，电池健康比外观重要。我特意问了质保剩余时间，最后选了一台还在保的车，心里踏实不少。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">小</div><div class="nm">小满爱自驾</div><div class="tm">11-01</div></div><div class="stars">★★★★☆</div><p>建议约看一次多看两台，路线规划好能省半天。我第一次只约了一台，来回跑了两趟，第二次学聪明了。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">王</div><div class="nm">王小北</div><div class="tm">10-31</div></div><div class="stars">★★★☆☆</div><p>吐槽一下，有些车源描述写得太笼统，还是得实地看。报告能帮你排雷，但不能代替自己上手确认，冷启动和换挡一定要试。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">赵</div><div class="nm">赵四不姓赵</div><div class="tm">10-30</div></div><div class="stars">★★★★★</div><p>过户材料那块提醒得及时。不同城市要求真不一样，我提前打电话问了车管所，少跑一趟冤枉路。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">吴</div><div class="nm">吴桐树下</div><div class="tm">10-29</div></div><div class="stars">★★★★☆</div><p>七座车那段说第三排能不能真坐人，很真实。很多车看着是七座，第三排其实只能应急，买之前一定要带家人去试坐。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">郑</div><div class="nm">郑在选车</div><div class="tm">10-28</div></div><div class="stars">★★★★☆</div><p>保值率这个角度以前没想过。打算三五年换车的话，算上折旧确实比配置重要，专题里这段帮我调整了看车重点。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">孙</div><div class="nm">孙小满</div><div class="tm">10-27</div></div><div class="stars">★★★★★</div><p>新手顺序那段很受用：先预算、再用途、再筛车况。以前一上来就看图片，现在知道先看结构和手续了。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">何</div><div class="nm">何以为家</div><div class="tm">10-26</div></div><div class="stars">★★★☆☆</div><p>整体有用，但希望多讲点谈价技巧。车况确认以后怎么沟通价格，这块对新手来说其实挺难的。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">高</div><div class="nm">高架桥上的风</div><div class="tm">10-25</div></div><div class="stars">★★★★☆</div><p>手动挡练手车那段说到我心里了，离合器状态一定要试。价格便宜是便宜，修起来也不贵，但前提是车况别太差。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">冯</div><div class="nm">冯小刚的邻居</div><div class="tm">10-24</div></div><div class="stars">★★★★★</div><p>收藏了，准备分几次看完。二手车这事急不得，多看几轮再下手，比冲动买完后悔强。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">许</div><div class="nm">许愿不加班</div><div class="tm">10-23</div></div><div class="stars">★★★★☆</div><p>年检保险到期时间这个细节很关键，我上次差点接手一台保险马上到期的车，算下来也是一笔支出。</p></div>
+      <div class="gz-cmt"><div class="who"><div class="av">邓</div><div class="nm">邓布利多开车</div><div class="tm">10-22</div></div><div class="stars">★★★☆☆</div><p>页面信息挺全，就是内容偏多，第一次看得慢慢消化。建议先看 FAQ 和深度解析，再看评论，会顺一点。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 资讯 ===== -->
+<section class="gz-sec" id="gz-news">
+  <div class="wrap">
+    <div class="gz-sechead">
+      <div>
+        <h2>相关资讯与延伸阅读</h2>
+        <div class="sub">围绕二手车直卖、车况判断与消费趋势的延伸内容。</div>
+      </div>
+    </div>
+    <div class="gz-news">
+      <article class="gz-newscard"><div class="dt">2026-11-06</div><h4>二手车消费越来越看重“车况透明度”</h4><p>检测报告、保养记录、权属信息逐渐成为买家筛选车源的前置条件，信息越完整，沟通成本越低。</p></article>
+      <article class="gz-newscard"><div class="dt">2026-11-04</div><h4>新能源二手车关注度持续上升</h4><p>电池健康度与剩余质保成为核心判断项，买家对充电条件和电池检测数据的重视程度明显提高。</p></article>
+      <article class="gz-newscard"><div class="dt">2026-11-02</div><h4>家庭用户更关注空间与安全配置</h4><p>多孩家庭出行需求带动七座车型与中大型 SUV 关注度，第三排实用性和安全配置成为讨论重点。</p></article>
+      <article class="gz-newscard"><div class="dt">2026-10-31</div><h4>年底购车如何避开集中支出</h4><p>年检、保险、保养到期时间集中，容易在接手后短期产生多笔费用，提前核对能更好规划预算。</p></article>
+      <article class="gz-newscard"><div class="dt">2026-10-29</div><h4>准新车为何成为性价比选项</h4><p>年限短、里程低的准新车，价格通常仍低于同款新车，适合追求性价比又不想承担新车折旧的用户。</p></article>
+      <article class="gz-newscard"><div class="dt">2026-10-27</div><h4>过户流程地区差异需要注意什么</h4><p>不同城市对材料与办理要求存在差异，交易前确认当地规定，能有效减少往返次数与时间成本。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 订阅 ===== -->
+<section class="gz-sec" id="gz-sub">
+  <div class="wrap">
+    <div class="gz-sub">
+      <div>
+        <h2>订阅车源与专题更新</h2>
+        <p>留下邮箱，获取瓜子二手车官网相关专题的新增内容、车源趋势与选购提醒。仅为模拟展示，不会真实发送。</p>
+      </div>
+      <form onsubmit="return false;">
+        <input type="email" placeholder="输入邮箱地址" aria-label="邮箱">
+        <button type="button">订阅</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="gz-foot">
+  <div class="wrap">
+    <div class="gz-footgrid">
+      <div>
+        <h5>瓜子二手车官网 · 内容专题</h5>
+        <p>围绕二手车直卖平台的车源筛选、检测报告、价格参考与交易流程整理的内容专题，帮助读者在决策前建立清晰的判断顺序。</p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <ul>
+          <li><a href="/#gz-intro">平台简介</a></li>
+          <li><a href="/#gz-cats">车源分类</a></li>
+          <li><a href="/#gz-hot">热门车源</a></li>
+          <li><a href="/#gz-deep">深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>阅读支持</h5>
+        <ul>
+          <li><a href="/#gz-guide">浏览体验指南</a></li>
+          <li><a href="/#gz-faq">常见问题</a></li>
+          <li><a href="/#gz-comments">用户讨论</a></li>
+          <li><a href="/#gz-news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>友情链接</h5>
+        <ul>
+          <li><a href="/#gz-home">二手车选购参考</a></li>
+          <li><a href="/#gz-home">车况检测说明</a></li>
+          <li><a href="/#gz-home">过户流程资料</a></li>
+          <li><a href="/#gz-home">友情链接占位</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="gz-foothr">
+    <div class="gz-copy">
+      <span>© 2026 瓜子二手车官网内容专题 · 本站为内容整理页面，仅供参考。</span>
+      <span>免责声明：页面信息不构成交易建议，车源、价格与服务规则请以平台官方实时展示为准。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+          </html>
